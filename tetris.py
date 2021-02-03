@@ -38,8 +38,7 @@ class W:
 			if B==0:
 				B+=1
 				for F in C(E,1,-1):
-					for D in C(A.width):A.field[F][D]=A.field[F-1][D]
-		A.score+=B**2
+					for D in C(A.width):A.field[F][D]=A.field[F-1][D];A.score+=B**2
 	def go_down(A):
 		A.figure.y+=1
 		if A.intersects():A.figure.y-=1;A.freeze()
@@ -95,6 +94,6 @@ while not P:
 				b=E*4+F
 				if b in A.figure.image():B.draw.rect(G,L[A.figure.color],[A.x+A.zoom*(F+A.figure.x)+1,A.y+A.zoom*(E+A.figure.y)+1,A.zoom-2,A.zoom-2])
 	R=B.font.SysFont(f,25,H,I);g=B.font.SysFont(f,65,H,I);N=R.render(str(A.score),H,X);c=N.get_rect(center=(J[0]/2,20))
-	if A.state==e:d=R.render('Game Over',H,(255,0,0));G.blit(d,N.get_rect(center=(J[0]/2-50,J[1]/2)))
+	if A.state==e:d=R.render('Game Over',H,(255,0,0));G.blit(d,N.get_rect(center=(J[0]/2-50,J[1])))
 	G.blit(N,c);B.display.flip();a.tick(Q)
 B.quit()
