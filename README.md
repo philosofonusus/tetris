@@ -1,16 +1,12 @@
 # tetris
 Simple python tetris game
 
-Steps to run
-1. install dependecities
-2. run
-
-To install dependecities:
+Install dependecities:
 ```
 python install -r reqiurements.txt
 ```
 
-To run use:
+Run:
 ```
-python p.py
+python tetris.py
 ```
