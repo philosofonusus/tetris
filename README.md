@@ -3,7 +3,7 @@ Simple python tetris game
 
 Install dependecities:
 ```
-python install -r reqiurements.txt
+python install -r requirements.txt
 ```
 
 Run:
